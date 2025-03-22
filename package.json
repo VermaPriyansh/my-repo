@@ -1,0 +1,56 @@
+{
+  "name": "chatgpt-vercel",
+  "version": "1.1.0",
+  "description": "Elegant and Powerful. Powered by OpenAI and Vercel",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsx scripts/genEnv.ts && vite dev",
+    "build": "tsx scripts/genEnv.ts && vite build",
+    "build:vps": "NODE_OPTIONS=\"--max-old-space-size=3072\" pnpm build",
+    "start": "node dist/output/server/index.mjs",
+    "prettier": "prettier --write ."
+  },
+  "dependencies": {
+    "@solid-primitives/event-listener": "^2.3.3",
+    "@solid-primitives/media": "^2.2.9",
+    "@solid-primitives/resize-observer": "^2.0.26",
+    "@solid-primitives/scheduled": "^1.4.3",
+    "@solidjs/meta": "^0.29.4",
+    "@solidjs/router": "^0.14.5",
+    "@unocss/reset": "^0.62.4",
+    "array-keyed-map": "^2.1.3",
+    "eventsource-parser": "^2.0.1",
+    "fzf": "^0.5.2",
+    "h3": "^1.12.0",
+    "highlight.js": "^11.10.0",
+    "html-to-image": "^1.11.11",
+    "katex": "^0.16.11",
+    "markdown-it": "^14.1.0",
+    "markdown-it-highlightjs": "^4.2.0",
+    "markdown-it-katex": "^2.0.3",
+    "markdown-it-kbd": "^2.2.2",
+    "solid-js": "^1.8.23",
+    "solid-transition-group": "^0.2.3",
+    "undici": "^6.19.8"
+  },
+  "devDependencies": {
+    "@iconify-json/carbon": "^1.2.1",
+    "@iconify-json/ri": "^1.2.0",
+    "@types/markdown-it": "^13.0.9",
+    "@types/node": "^20.16.6",
+    "esbuild": "^0.24.0",
+    "eslint": "^9.11.1",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2",
+    "unocss": "^0.62.4",
+    "vite": "^5.4.8",
+    "vite-plugin-solid": "^2.10.2",
+    "vite-plugin-with-nitro": "0.0.2",
+    "vite-tsconfig-paths": "^5.0.1"
+  },
+  "packageManager": "pnpm@9.11.0",
+  "engines": {
+    "node": ">20.0.0"
+  }
+}
