@@ -18,16 +18,16 @@ export const defaultEnv = {
     continuousDialogue: true,
     model: "gpt-4o-mini" as SimpleModel
   },
-  CLIENT_DEFAULT_MESSAGE: `🧠 PromptBridge AI
+  CLIENT_DEFAULT_MESSAGE: ` PromptBridge AI
 Empowering global users to write clearer, safer, and more effective AI prompts.
 
-🌐 Multilingual Input
+ Multilingual Input
 Type your prompt in any of 50+ languages. PromptBridge will detect the language and translate it into optimized English for better AI performance.
 
-🛡️ Prompt Validation
+ Prompt Validation
 We check for grammar, ambiguity, and harmful language — and suggest ethical, inclusive alternatives when needed.
 
-💡 How to Use
+How to Use
 
 Enter your prompt in the box above
 
@@ -37,7 +37,7 @@ View the corrected, safer version of your prompt
 
 Copy and use it with your favorite AI tool!
 
-🔒 Your data stays local — we don’t store or log anything.
+Your data stays local — we don’t store or log anything.
 `,
   CLIENT_MAX_INPUT_TOKENS: {
     "gpt-4o": 128 * 1000,
